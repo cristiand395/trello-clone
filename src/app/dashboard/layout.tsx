@@ -1,6 +1,10 @@
-function Layout() {
+import Navbar from '../components/navbar';
+function Layout({ children }: { children: React.ReactNode }) {
     return (
-      <h1>Layout</h1>
+        <>
+            <Navbar/>
+            {children}
+        </>
     );
 }
 

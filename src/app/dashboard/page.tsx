@@ -1,6 +1,10 @@
+import Section from "../components/section";
+
 function Page() {
     return (
-      <h1>Contenido</h1>
+      <div>
+        <Section />
+      </div>
     );
 }
 
