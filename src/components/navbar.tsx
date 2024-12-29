@@ -1,5 +1,8 @@
 "use client"
+import { ThemeToggle } from "@/components/themeToggle";
+
 function Navbar () {
+
     return (
         <nav className="w-full border-solid flex justify-between py-2 px-3">
             <div className="flex">
@@ -12,7 +15,8 @@ function Navbar () {
             </div>
             <div className="flex">
                 <div>Avatar</div>
-                <div>Dark</div>
+                <ThemeToggle/>
+                <p className="text-black dark:text-white">Logout</p>
             </div>
         </nav>
     )
